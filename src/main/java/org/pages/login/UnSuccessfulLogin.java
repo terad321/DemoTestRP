@@ -6,7 +6,6 @@ import org.pages.BasePage;
 
 public class UnSuccessfulLogin extends BasePage {
 
-
     @FindBy(xpath = "")
     WebElement errorMessages;
 

@@ -6,26 +6,20 @@ import org.pages.BasePage;
 
 public class SuccessfulLogin extends BasePage {
 
-    @FindBy(xpath = "")
-    WebElement HelloMessages;
+    @FindBy(xpath = "//div[@class='profile-name d-flex align-items-center']")
+    WebElement checkProfile;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//app-profile-menu[@class='d-lg-none']//div[@class='profile-menu']//button")
     WebElement signOutButton;
 
-    @FindBy(xpath = "")
-    WebElement loginTitle;
+    @FindBy(xpath = "//app-profile-menu[@class='d-lg-none']//div[@class='profile-menu']//button")
+    WebElement dropList;
 
-//    public boolean messagesVisor(){ return HelloMessages.isDisplayed(); }
+//    public boolean visorButton(){ return loginTitle.isDisplayed(); }
 //
-//    public String getMessagesText(){
-//        return HelloMessages.getText();
-//    }
+//    public String getButtonText(){ return loginTitle.getText();}
 
-    public boolean visorButton(){ return loginTitle.isDisplayed(); }
-
-    public String getButtonText(){ return loginTitle.getText();}
-
-    public boolean isSignOutButton(){ return signOutButton.isDisplayed(); }
+    public String checkProfile(){ return checkProfile.getText(); }
 
     public LoginPage signOut(){
         signOutButton.click();
