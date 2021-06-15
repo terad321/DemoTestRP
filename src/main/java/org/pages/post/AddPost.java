@@ -1,4 +1,4 @@
-package org.pages.login;
+package org.pages.post;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

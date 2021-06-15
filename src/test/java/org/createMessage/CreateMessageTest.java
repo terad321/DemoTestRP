@@ -1,8 +1,8 @@
-package org.message;
+package org.createMessage;
 
 import org.BaseTest;
 import org.infrastructure.Url;
-import org.pages.login.AddMessage;
+import org.pages.message.AddMessage;
 import org.pages.login.LoginPage;
 import org.pages.login.SuccessfulLogin;
 import org.testng.Assert;
@@ -25,7 +25,7 @@ public class CreateMessageTest extends BaseTest {
     }
 
     @Test
-    public void logInWithValidUsernameAndPasswordTest() throws InterruptedException {
+    public void createMessageTest () throws InterruptedException {
         SuccessfulLogin successfulLogin = new SuccessfulLogin();
         Assert.assertEquals(successfulLogin.checkProfile(), "andrey +221");
         goToUrl(Url.my_message);

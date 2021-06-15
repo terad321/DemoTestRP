@@ -2,7 +2,7 @@ package org.createPost;
 
 import org.BaseTest;
 import org.infrastructure.Url;
-import org.pages.login.AddPost;
+import org.pages.post.AddPost;
 import org.pages.login.LoginPage;
 import org.pages.login.SuccessfulLogin;
 import org.testng.Assert;
@@ -23,8 +23,8 @@ public class CreatePostTest extends BaseTest {
         LoginPage loginPage = new LoginPage().loginPage(email, pass);
     }
 
-    @Test
-    public void createPostInVerification() throws InterruptedException {
+    @Test()
+    public void createPostTest() throws InterruptedException {
         SuccessfulLogin successfulLogin = new SuccessfulLogin();
         Assert.assertEquals(successfulLogin.checkProfile(), "andrey +221");
 

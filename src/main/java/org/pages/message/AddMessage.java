@@ -1,4 +1,4 @@
-package org.pages.login;
+package org.pages.message;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,4 +35,6 @@ public class AddMessage extends BasePage {
     public String getListMessage() { return
             //какой-то цикл написать для работы с списком
             listMessage.get(40).getText();  }
+
+
 }

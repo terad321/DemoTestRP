@@ -20,7 +20,7 @@ public class DriverHolder {
 
     public  void initDriver(DriverType driverType){
         driver =  WebDriverFactory.initDriver(driverType);
-        DriverHolder.getInstance().getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        DriverHolder.getInstance().getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         DriverHolder.getInstance().getDriver().manage().window().maximize();
     }
 

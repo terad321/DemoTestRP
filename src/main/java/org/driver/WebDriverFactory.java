@@ -11,7 +11,7 @@ public class WebDriverFactory {
 
         switch (driverType) {
             case OPERA: {
-                WebDriverManager.chromedriver().version("79").setup();
+                WebDriverManager.operadriver().version("90").setup();
                 return new OperaDriver();
             }
             case FIREFOX: {
