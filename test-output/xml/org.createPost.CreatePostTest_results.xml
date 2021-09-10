@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5,324">
+           time="9,774">
     <properties></properties>
 
 
 
             <testcase
                 name="createPostTest"
-                time="5,324"
+                time="9,774"
                 classname="org.createPost.CreatePostTest">
             </testcase>
 </testsuite>
