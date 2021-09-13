@@ -15,13 +15,13 @@ public class WebDriverFactory {
                 return new OperaDriver();
             }
             case FIREFOX: {
-                WebDriverManager.chromedriver().setup();
-                return new ChromeDriver();
+                WebDriverManager.firefoxdriver().setup();
+                return new FirefoxDriver();
             }
             case CHROME:
             default: {
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+                WebDriverManager.chromedriver().setup();
+                return new ChromeDriver();
             }
         }
     }
