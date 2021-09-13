@@ -20,7 +20,8 @@ public class WebDriverFactory {
             }
             case CHROME:
             default: {
-                WebDriverManager.chromedriver().setup();
+                WebDriverManager.firefoxdriver().setup();
+//                WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
             }
         }
