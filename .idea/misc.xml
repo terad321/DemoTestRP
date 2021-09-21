@@ -5,6 +5,10 @@
     <option name="afterCompileTasks">
       <set>
         <MavenCompilerTask>
+          <option name="goal" value="io.qameta.allure:allure-maven:2.10.0:install" />
+          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
+        </MavenCompilerTask>
+        <MavenCompilerTask>
           <option name="goal" value="io.qameta.allure:allure-maven:2.10.0:report" />
           <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
         </MavenCompilerTask>
